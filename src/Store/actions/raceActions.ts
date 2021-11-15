@@ -5,7 +5,6 @@ import { HorseEntryTypes, raceActionCreator, LoginResponseType, LoginParamType, 
 import { restApiCall, endPoints, RestApiController } from "../../CommonApiController";
 import { Dispatch } from "react";
 import { toast } from "react-toastify";
-import { apiLoadingStop } from "./global";
 
 //Dispatch Horse success function
 const updateHorseStatus = (data: HorseEntryTypes[]) => ({
