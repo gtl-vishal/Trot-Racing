@@ -1,0 +1,55 @@
+.App {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+/* Loader css */
+.newloader-style {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+}
+
+.newloader-style:after {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+	content: '';
+	background-color: rgba(65, 65, 65, 0.5);
+	pointer-events: none;
+}
+
+.newloader-style .newloader-style img {
+	z-index: 2;
+	position: relative;
+}
+
+.blink {
+	animation: blinker 1s linear infinite;
+}
+
+.race-card {
+  margin: 0 auto;
+  width: 80%;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
